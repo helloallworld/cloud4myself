@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-//@FeignClient(name = "producer-service",fallback = ProcuderFeignHystrix.class)
-@FeignClient(name = "producer-service")
+@FeignClient(name = "producer-service",fallback = ProcuderFeignHystrix.class)
+//@FeignClient(name = "producer-service")
 public interface ProducerFeign {
 
     /**
