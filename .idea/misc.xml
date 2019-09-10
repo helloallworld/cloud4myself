@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/parent/pom.xml" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/services/common/pom.xml" />
+        <option value="$PROJECT_DIR$/services/parent/pom.xml" />
+        <option value="$PROJECT_DIR$/services/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/producerservice/pom.xml" />
+        <option value="$PROJECT_DIR$/services/producerservice/pom.xml" />
+        <option value="$PROJECT_DIR$/customer-services/pom.xml" />
+        <option value="$PROJECT_DIR$/services/customer-services/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>
