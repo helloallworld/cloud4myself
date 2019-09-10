@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/cloud4myself.iml" filepath="$PROJECT_DIR$/.idea/cloud4myself.iml" />
       <module fileurl="file://$PROJECT_DIR$/services/common/common.iml" filepath="$PROJECT_DIR$/services/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/config-service/config-service.iml" filepath="$PROJECT_DIR$/services/config-service/config-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/services/customer-services/customer-services.iml" filepath="$PROJECT_DIR$/services/customer-services/customer-services.iml" />
       <module fileurl="file://$PROJECT_DIR$/services/eureka/eureka.iml" filepath="$PROJECT_DIR$/services/eureka/eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/services/parent/parent.iml" filepath="$PROJECT_DIR$/services/parent/parent.iml" />

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common" />
+        <module name="config-service" />
         <module name="customer-services" />
         <module name="eureka" />
         <module name="parent" />
@@ -15,6 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common" target="1.8" />
+      <module name="config-service" target="1.8" />
       <module name="customer-services" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="parent" target="1.8" />
@@ -24,6 +26,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common" options="-parameters" />
+      <module name="config-service" options="-parameters" />
       <module name="customer-services" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="parent" options="-parameters" />

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/services/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/services/config-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/services/customer-services" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/services/eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/services/parent" charset="UTF-8" />
