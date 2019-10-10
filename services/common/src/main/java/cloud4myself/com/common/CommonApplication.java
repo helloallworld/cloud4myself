@@ -1,4 +1,4 @@
-package src.main.java.cloud4myself.com.common;
+package cloud4myself.com.common;
 
 public class CommonApplication {
 }
