@@ -10,6 +10,7 @@
         <module name="config-service" />
         <module name="customer-services" />
         <module name="eureka" />
+        <module name="gateway" />
         <module name="parent" />
         <module name="producer-service" />
       </profile>
@@ -19,6 +20,7 @@
       <module name="config-service" target="1.8" />
       <module name="customer-services" target="1.8" />
       <module name="eureka" target="1.8" />
+      <module name="gateway" target="1.8" />
       <module name="parent" target="1.8" />
       <module name="producer-service" target="1.8" />
     </bytecodeTargetLevel>
@@ -29,6 +31,7 @@
       <module name="config-service" options="-parameters" />
       <module name="customer-services" options="-parameters" />
       <module name="eureka" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="parent" options="-parameters" />
       <module name="producer-service" options="-parameters" />
     </option>
