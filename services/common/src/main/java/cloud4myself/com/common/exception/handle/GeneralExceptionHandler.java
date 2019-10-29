@@ -27,7 +27,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-import sun.java2d.loops.FillRect;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.ConstraintViolation;
