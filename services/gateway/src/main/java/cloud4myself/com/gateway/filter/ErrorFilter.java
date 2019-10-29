@@ -19,6 +19,8 @@ import java.util.Locale;
 
 /**
  * 网关服务异常拦截
+ *
+ * 仅能处理在各个filter中 的exception
  */
 @Component
 public class ErrorFilter extends ZuulFilter {

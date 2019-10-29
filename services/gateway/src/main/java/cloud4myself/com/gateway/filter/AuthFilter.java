@@ -1,5 +1,7 @@
 package cloud4myself.com.gateway.filter;
 
+import cloud4myself.com.common.exception.GeneralException;
+import cloud4myself.com.common.exception.SystemErrorCode;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
@@ -33,6 +35,10 @@ public class AuthFilter extends ZuulFilter {
         RequestContext context=RequestContext.getCurrentContext();
         HttpServletRequest request=context.getRequest();
         String method=request.getMethod();
+        String uri=request.getRequestURI();
+        if(uri.contains("sayhello")) {
+            throw new GeneralException(SystemErrorCode.MEDIA_NOT_SUPPORTED);
+        }
 //        if(method.equals("GET")){
 //           context.setSendZuulResponse(true);
 //            return null;

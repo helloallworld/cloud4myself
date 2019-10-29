@@ -62,11 +62,11 @@ public class MyRouteLocator extends SimpleRouteLocator implements RefreshableRou
         Map<String,ZuulProperties.ZuulRoute> routeMap=new LinkedHashMap<>();
         ZuulProperties.ZuulRoute zuulRoute=new ZuulProperties.ZuulRoute();
         //服务名，即spring.application.name
-        zuulRoute.setServiceId("eureka-client01");
+        zuulRoute.setServiceId("producer-service");
         //id
-        zuulRoute.setId("client01");
+        zuulRoute.setId("producer");
         //匹配规则
-        zuulRoute.setPath("/client01/**");
+        zuulRoute.setPath("/producer/**");
         //是否去除前缀  zuul.prefix=/api/v1，如果没有前缀，则不用zuulRoute.setStripPrefix(true)
 //        zuulRoute.setStripPrefix(true);
 //        zuulRoute.setRetryable(false);
@@ -74,7 +74,7 @@ public class MyRouteLocator extends SimpleRouteLocator implements RefreshableRou
 //        zuulRoute.setUrl("www.baidu.com");
         zuulRoute.setUrl(null);
         //以path值为key,
-        routeMap.put("/client01/**",zuulRoute);
+        routeMap.put("/producer/**",zuulRoute);
 //        ZuulProperties.ZuulRoute zuulRoute1=new ZuulProperties.ZuulRoute();
 //        zuulRoute1.setServiceId("zuul-service");
 //        zuulRoute1.setId("zuul");
