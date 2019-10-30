@@ -36,9 +36,9 @@ public class AuthFilter extends ZuulFilter {
         HttpServletRequest request=context.getRequest();
         String method=request.getMethod();
         String uri=request.getRequestURI();
-        if(uri.contains("sayhello")) {
-            throw new GeneralException(SystemErrorCode.MEDIA_NOT_SUPPORTED);
-        }
+//        if(uri.contains("sayhello")) {
+//            throw new GeneralException(SystemErrorCode.MEDIA_NOT_SUPPORTED);
+//        }
 //        if(method.equals("GET")){
 //           context.setSendZuulResponse(true);
 //            return null;

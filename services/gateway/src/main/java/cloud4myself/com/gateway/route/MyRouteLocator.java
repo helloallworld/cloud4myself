@@ -67,8 +67,23 @@ public class MyRouteLocator extends SimpleRouteLocator implements RefreshableRou
         zuulRoute.setId("producer");
         //匹配规则
         zuulRoute.setPath("/producer/**");
-        //是否去除前缀  zuul.prefix=/api/v1，如果没有前缀，则不用zuulRoute.setStripPrefix(true)
-//        zuulRoute.setStripPrefix(true);
+        /**
+         * zuulRoute.setStripPrefix()
+         * true:请求/producer/**  ==> 转为 /**
+         * false:请求/producer/** ==> 转为 /producer/**   (如果还想请求到可在controller上增加@RequestMapping("/producer"))
+         *
+         * 与/api/v1的前缀无关，仅仅表示ZuulRoute中的转换
+         * /api/v1仅仅是在  protected Map<String,ZuulProperties.ZuulRoute> locateRoutes()方法中给请求对应的地址加前缀
+         * 即：如果在locateRoutes()方法中给路由加上了/api/v1
+         *     只有请求/api/v1/producer/** 的地址才有路由
+         *          此时zuulRoute.setStripPrefix()为true时  /api/v1/producer/** ===》 /**
+         *              zuulRoute.setStripPrefix()为false时  /api/v1/producer/** ===》 /producer/**
+         *     请求/producer/** 的地址是找不到对应路由的
+         *
+         * 总结：zuul.prefix的值设置的是：前端请求与网关的联系映射
+         *       zuulRoute.setStripPrefix 是 gateway 与 各个服务间的映射是否去掉path中的/producer
+         */
+//        zuulRoute.setStripPrefix(false);
 //        zuulRoute.setRetryable(false);
 //        routeMap.put("client01",zuulRoute);
 //        zuulRoute.setUrl("www.baidu.com");
