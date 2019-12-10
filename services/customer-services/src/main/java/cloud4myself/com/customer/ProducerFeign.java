@@ -2,10 +2,9 @@ package cloud4myself.com.customer;
 
 
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 @FeignClient(name = "producer-service",fallback = ProcuderFeignHystrix.class)
 //@FeignClient(name = "producer-service")
@@ -18,4 +17,7 @@ public interface ProducerFeign {
      */
     @RequestMapping(value = "/sayhello",method = RequestMethod.GET)
     public String sayHelloUseProducer(@RequestParam(value = "name") String name);
+
+    @PostMapping(value = "/aaa")
+    public String test(@RequestBody Map map);
 }

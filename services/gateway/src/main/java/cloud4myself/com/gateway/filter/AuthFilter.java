@@ -1,5 +1,6 @@
 package cloud4myself.com.gateway.filter;
 
+import cloud4myself.com.common.Constants;
 import cloud4myself.com.common.exception.GeneralException;
 import cloud4myself.com.common.exception.SystemErrorCode;
 import com.netflix.zuul.ZuulFilter;
@@ -44,7 +45,8 @@ public class AuthFilter extends ZuulFilter {
 //            return null;
 //        }
 //        context.setSendZuulResponse(false);
-
+        //设置header会存入到http请求的header中
+        context.addZuulRequestHeader(Constants.HTTP_HEADER_USER_ACCOUNT_ID,"0");
         System.out.println("end myFilter");
         return null;
     }
